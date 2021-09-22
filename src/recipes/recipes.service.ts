@@ -12,10 +12,30 @@ export class RecipesService {
    */
 
   async create(data: NewRecipeInput): Promise<Recipe> {
+
+    console.log("start create")
+    const test = new Recipe()
+    test.id = "1"
+    test.title = data.title
+    test.description = "description"
+    test.creationDate = new Date()
+    test.ingredients = ["ingredient"]
+    return test
+
     return {} as any;
   }
 
   async findOneById(id: string): Promise<Recipe> {
+
+    const test = new Recipe()
+    test.id = "1"
+    test.title = "title"
+    test.description = "description"
+    test.creationDate = new Date()
+    test.ingredients = ["ingredient"]
+    test.remark = "remark"
+    return test
+
     return {} as any;
   }
 
